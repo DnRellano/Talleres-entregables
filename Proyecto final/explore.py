@@ -1,0 +1,11 @@
+import pandas as pd
+df = pd.read_csv('Train.csv')
+print('Shape:', df.shape)
+print()
+print(df.dtypes)
+print()
+print('Nulls:', df.isnull().sum().sum())
+print()
+print(df['Reached.on.Time_Y.N'].value_counts())
+print()
+print(df.describe())
